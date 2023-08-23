@@ -21,7 +21,7 @@ steps:
   inputs:
     command: 'plan'
     environmentServiceName: 'Free-Triallll'
-    commandOptions: '-var="subscription_id=$(subscription_id)" -var="tenant_id=$(tenant_id)" '
+    commandOptions: ' -var="tenant_id=$(tenant_id)" '
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
