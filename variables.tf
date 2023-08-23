@@ -1,5 +1,5 @@
 variable "resourcename" {
-  default = "k8s-resources-dev-1"
+  default = "k8s-resources-dev"
 }
 variable "clustername" {
   default = "kubernetes-aks1-dev"
