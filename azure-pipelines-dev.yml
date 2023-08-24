@@ -29,5 +29,5 @@ steps:
     command: 'apply'
     environmentServiceName: 'Free-Triallll'
     #commandOptions: '-var="client_id=$(client_id)" -var="client_secret=$(client_secret)" -var="subscription_id=$(subscription_id)" -var="tenant_id=$(tenant_id)"'
-    commandOptions: '-var="subscription_id=$(subscription_id)'
+    commandOptions: '-var="subscription_id=$(subscription_id)" " -var="tenant_id=$(tenant_id)"'
     allowTelemetryCollection: true
