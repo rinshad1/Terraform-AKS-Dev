@@ -14,20 +14,20 @@ steps:
   inputs:
     command: 'init'
     backendType: 'azurerm'
-    backendServiceArm: 'Free-Triallll'
+    backendServiceArm: 'abb'
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
   inputs:
     command: 'plan'
-    environmentServiceName: 'Free-Triallll'
+    environmentServiceName: 'abb'
     commandOptions: '-var="subscription_id=$(subscription_id)" -var="tenant_id=$(tenant_id)" '
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
   inputs:
     command: 'apply'
-    environmentServiceName: 'Free-Triallll'
+    environmentServiceName: 'abb'
     #commandOptions: '-var="client_id=$(client_id)" -var="client_secret=$(client_secret)" -var="subscription_id=$(subscription_id)" -var="tenant_id=$(tenant_id)"'
     commandOptions: '-var="subscription_id=$(subscription_id)" " -var="tenant_id=$(tenant_id)"'
     allowTelemetryCollection: true
