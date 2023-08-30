@@ -7,6 +7,7 @@ terraform {
   }
 }
 provider "azurerm" {
+    skip_provider_registration = true
     features {}
 }
 resource "azurerm_resource_group" "k8s" {
