@@ -20,11 +20,11 @@ variable "agentnode" {
   default = "1"
 }
 variable "client_id" {
-  default     =  "01e81877-d075-4d04-b987-ca08225c3bc1"  #"$(client_id)"
+  default     =  "$(client_id)"
   description = "Azure Client ID"
 }
 variable "client_secret" {
-  default     = "PQi8Q~le0cdFsuD6EU-iSfamqPxct1gnPjIDNaK8"  #"$(client_secret)"
+  default     = "$(client_secret)"
   description = "Azure Client Secret"
 }
 variable "subscription_id" {
