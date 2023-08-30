@@ -9,6 +9,7 @@ terraform {
 provider "azurerm" {
     skip_provider_registration = true
     features {}
+    client_id = var.client_id
 }
 resource "azurerm_resource_group" "k8s" {
   name     = var.resourcename
